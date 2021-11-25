@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+html body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Estonia', cursive;
+    font-size: 29px;
+    font-weight: lighter;
+    color: #222;
+}
+.navbar{
+    /*0.8: độ trong*/
+    background-color:rgba(82,64,120,0.6) !important;
+}
+.welcome hr {
+    border-top: 2px solid rgba(62,44,100,0.6);
+    width: 95%;
+    margin-bottom: 2rem;
+}
+.fa-react{
+    color: #81D8F7;
+}
+.fa-angular{
+    color: rgb(177,43,55);
+}
+.fa-css3{
+    color: #D76537;
+}
+.fa-react, .fa-angular, .fa-css3{
+    font-size: 3em;
+    margin: 1rem;
+}
+.navbar li a {
+    color: white !important;
+}
+.navbar li a:hover {
+    color: black !important;
+}
+.navbar-branch img {
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+}
+.text1 {
+    color: black;
+    font-size: 50px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 90vh;
+}
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+}
+.carousel-caption h1 {
+    font-size: 400%;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px #000;
+}
+.carousel-caption h3 {
+    font-size: 200%;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px #000;
+}
+.btn-primary{
+    background-color: rgb(82,64,120);
+    border: 1px solid white;
+}
+.btn-primary:hover {
+    background-color: rgb(62,44,100);
+    border: 1px solid white;
+}
+.btn-outline-light:hover{
+    background-color: rgb(82,64,120);
+    color: white;
+}
+.fun{
+    width: 100%;
+    color: blueviolet;
+}
+.social a{
+    font-size: 2em;
+    padding: 3rem;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #00aced;
+}
+.fa-google-plus-g{
+    color: #dd4b39;
+}
+.fa-youtube{
+    color: #bb0000;
+}
+.fa-instagram{
+    color: #517fa4;
+}
+footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+}
+footer img{
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.light{
+    border-top: 1px solid #d5d5d5;
+}
+.light-100{
+    border-top: 1px solid #d5d5d5;
+    width: 95%;
+}
+.light-100 h5{
+    font-size: 40px;
+}
+@media (max-width: 1364px) {
+
+}
+@media (max-width: 982px) {
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h1 {
+        font-size: 220%;
+    }
+    .carousel-caption h3 {
+        font-size: 130%;
+    }
+    .carousel-caption .btn{
+        font-size: 80%;
+        padding: 8px 14px;
+    }
+}
+.jumbotron{
+    padding: 1rem;
+    border-radius: 0;
+}
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h1 {
+        font-size: 190%;
+    }
+    .carousel-caption h3 {
+        font-size: 100%;
+    }
+    .carousel-caption .btn{
+        font-size: 60%;
+        padding: 6px 10px;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 30%;
+    }
+    .carousel-caption h1 {
+        font-size: 170%;
+    }
+    .carousel-caption h3 {
+        font-size: 80%;
+    }
+    .carousel-caption .btn{
+        font-size: 60%;
+        padding: 6px 10px;
+    }
+}

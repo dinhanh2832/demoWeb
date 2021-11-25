@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+        @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+        figure.snip1477 {
+            font-family: 'Raleway', Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            min-width: 150px;
+            /*min-height: 90px;*/
+            max-width: 550px;
+            /*max-height: 350px;*/
+            width: 100%;
+            /*height: 100%;*/
+            color: #ffffff;
+            text-align: center;
+            font-size: 16px;
+            background-color: #000000;
+        }
+
+        figure.snip1477 *,
+        figure.snip1477 *:before,
+        figure.snip1477 *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.55s ease;
+            transition: all 0.55s ease;
+        }
+
+        figure.snip1477 img {
+            max-width: 100%;
+            backface-visibility: hidden;
+            vertical-align: top;
+            opacity: 0.9;
+        }
+
+        figure.snip1477 .title {
+            position: absolute;
+            top: 58%;
+            left: 25px;
+            padding: 5px 10px 10px;
+        }
+
+        figure.snip1477 .title:before,
+        figure.snip1477 .title:after {
+            height: 2px;
+            width: 400px;
+            position: absolute;
+            content: '';
+            background-color: #ffffff;
+        }
+
+        figure.snip1477 .title:before {
+            top: 0;
+            left: 10px;
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        figure.snip1477 .title:after {
+            bottom: 0;
+            right: 10px;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+
+        figure.snip1477 .title div:before,
+        figure.snip1477 .title div:after {
+            width: 2px;
+            height: 300px;
+            position: absolute;
+            content: '';
+            background-color: #ffffff;
+        }
+
+        figure.snip1477 .title div:before {
+            top: 10px;
+            right: 0;
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+
+        figure.snip1477 .title div:after {
+            bottom: 10px;
+            left: 0;
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+
+        figure.snip1477 h2,
+        figure.snip1477 h4 {
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        figure.snip1477 h2 {
+            font-weight: 400;
+        }
+
+        figure.snip1477 h4 {
+            display: block;
+            font-weight: 700;
+            background-color: #ffffff;
+            padding: 5px 10px;
+            color: #000000;
+        }
+
+        figure.snip1477 figcaption {
+            position: absolute;
+            bottom: 42%;
+            left: 25px;
+            text-align: left;
+            opacity: 0;
+            padding: 5px 60px 5px 10px;
+            font-size: 0.8em;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+        }
+
+        figure.snip1477 figcaption p {
+            margin: 0;
+        }
+
+        figure.snip1477 a {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        figure.snip1477:hover img,
+        figure.snip1477.hover img {
+            zoom: 1;
+            filter: alpha(opacity=35);
+            -webkit-opacity: 0.35;
+            opacity: 0.35;
+        }
+
+        figure.snip1477:hover .title:before,
+        figure.snip1477.hover .title:before,
+        figure.snip1477:hover .title:after,
+        figure.snip1477.hover .title:after,
+        figure.snip1477:hover .title div:before,
+        figure.snip1477.hover .title div:before,
+        figure.snip1477:hover .title div:after,
+        figure.snip1477.hover .title div:after {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        figure.snip1477:hover .title:before,
+        figure.snip1477.hover .title:before,
+        figure.snip1477:hover .title:after,
+        figure.snip1477.hover .title:after {
+            -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+        }
+
+        figure.snip1477:hover figcaption,
+        figure.snip1477.hover figcaption {
+            opacity: 1;
+            -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+        }
+
+        body {
+            background: url("https://st.quantrimang.com/photos/image/2016/09/17/anh-10.gif");
+            /*lấy toàn màn hình*/
+            background-size: cover;
+        }
+
+        .box {
+            /*margin-left: -10px;*/
+            width: 210px;
+            height: 210px;
+            margin-top: 30px;
+            /*overflow: hidden: cắt phần thừa*/
+            overflow: hidden;
+            /*border-radius: viền thành tròn*/
+            border-radius: 50%;
+            -webkit-box-shadow: 18px 15px 34px 3px rgba(117, 17, 102, 1);
+            -moz-box-shadow: 18px 15px 34px 3px rgba(117, 17, 102, 1);
+            box-shadow: 18px 15px 34px 3px rgba(117, 17, 102, 1);
+            /*transition: làm chậm theo thời gian quy định*/
+            transition: 3.5s;
+            perspective: 1000px;
+            /*animation-name: hinhAnh ;*/
+            /*animation-duration: 4s;*/
+            /*animation-iteration-count: infinite;*/
+        }
+
+        .box img {
+            width: 100%;
+            /*transform: lấy về tâm so với chính nó*/
+            transform: translateY(-40%);
+            /*margin: cách từ nó so vs bên cạnh*/
+            margin-top: 50%;
+        }
+
+        .text1 {
+            font-family: 'Estonia', cursive;
+            font-size: 40px;
+            font-weight: lighter;
+            color: antiquewhite;
+            margin-left: -50px;
+        }
+
+        /*.text {*/
+        /*    display: none;*/
+        /*}*/
+        /*!*tăng kích cỡ lên 1.1 lần*!*/
+        .box:hover {
+            /*transform: scale(1.1);*/
+            /*hiệu ứng*/
+            transform: rotate3d(90, 90, 90, 360deg);
+        }
+
+        /*@keyframes hinhAnh {*/
+        /*    0%{transform: rotate3d(60,60,60,0deg);}*/
+        /*    8%{transform: rotate3d(60,60,60,30deg);}*/
+        /*    16%{transform: rotate3d(60,60,60,60deg);}*/
+        /*    24%{transform: rotate3d(60,60,60,90deg);}*/
+        /*    32%{transform: rotate3d(60,60,60,120deg);}*/
+        /*    40%{transform: rotate3d(60,60,60,150deg);}*/
+        /*    48%{transform: rotate3d(60,60,60,180deg);}*/
+        /*    56%{transform: rotate3d(60,60,60,210deg);}*/
+        /*    64%{transform: rotate3d(60,60,60,240deg);}*/
+        /*    72%{transform: rotate3d(60,60,60,270deg);}*/
+        /*    80%{transform: rotate3d(60,60,60,300deg);}*/
+        /*    90%{transform: rotate3d(60,60,60,330deg);}*/
+        /*    100%{transform: rotate3d(60,60,60,360deg);}*/
+        /*}*/
+        @media (max-width: 1364px) {
+
+        }
+
+        @media (max-width: 992px) {
+
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                width: 180px;
+            }
+
+            .box img {
+                width: 60%;
+                height: 60%;
+            }
+
+            .box text {
+                font-size: 90%;
+            }
+
+            .text1 {
+                font-family: 'Estonia', cursive;
+                font-size: 25px;
+                font-weight: lighter;
+                color: antiquewhite;
+                margin-left: 0;
+            }
+        }
+        @media (max-width: 576px) {
+            .box img {
+                width: 60%;
+                height: 60%;
+            }
+
+            .box text {
+                font-size: 90%;
+            }
+            .text1 {
+                font-family: 'Estonia', cursive
+                font-size: 20px;
+                font-weight: lighter;
+                color: antiquewhite;
+                margin-left: -50px;
+            }
+        }
+    </style>
+
+</head>
+<center>
+    <h1>Profile Của Ánh</h1>
+</center>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1">
+            <a class="navbar-brand" href="#">
+                <img src="img/ánhepzai.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bootstrap
+            </a>
+        </div>
+        <div class="offset-4"></div>
+        <div class="col-7">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="col"></div>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <div class="box">
+                <img src="img/ánhepzai.jpg" alt="">
+            </div>
+            <div class="text text-center">
+                <h1 class="text1">Nguyễn Đình Ánh <br>
+                    Đẹp zai</h1>
+                <h2 class="text1">Quỳnh Phụ - Thái Bình</h2>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/anh1.jpg" width="800" height="350" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/anh2.jpg" width="800" height="350" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/anh3.jpg" width="800" height="350" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                                    data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                                    data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <figure class="snip1477 ">
+                            <img src="img/anh1.jpg" alt="sample38"/>
+                            <div class="title">
+                                <div>
+                                    <h2>Ky Nang</h2>
+                                    <h4>Tool</h4>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <p>Anh dep zai cu te pho mai que nhat vinh bac bo Which is worse, that everyone has his
+                                    price, or that the price is always so low.</p>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-6">
+                        <figure class="snip1477 ">
+                            <img src="img/anh1.jpg" alt="sample38"/>
+                            <div class="title">
+                                <div>
+                                    <h2>Ky Nang</h2>
+                                    <h4>Tool</h4>
+                                </div>
+                            </div>
+                            <figcaption>
+                                <p>Anh dep zai cu te pho mai que nhat vinh bac bo Which is worse, that everyone has his
+                                    price, or that the price is always so low.</p>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-2">
+            <video controls autoplay  style="margin-right: 60px">
+                <source src="ttps://www.youtube.com/embed/_8ldAdQd9WU">
+            </video>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<div class="co">
+
+</div>
+</body>
+</html>

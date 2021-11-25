@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang của Ánh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleOfAnh.css">
+</head>
+<body>
+<!--thẻ nav đứng ở vị trí đầu tiên trong trang web, thường để chứ đường link đến trang khác-->
+<!--navbar-expand-md: hiện đường link từ kích thước medium trở lên-->
+<!--navbar-light bg-light: độ sáng hoặc tối-->
+<!--sticky-top: dính trên đỉnh-->
+<!--class"container-fluid": chiếm toàn bộ chiều ngang-->
+<!--class"navbar-branch": chứa ảnh đại diện cho thương hiệu-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+    <div class="container-fluid">
+        <a class="navbar-branch" href="#">
+            <img src="myProfile/img/anh2.jpg">
+            <a class="text1">ĐÌNH ÁNH</a>
+        </a>
+        <!--        class="navbar-toggler: lật đi lật lại-->
+        <!--        data-toggler="collapse": biến mất từ từ-->
+        <!--        class="navbar-toggle-icon: biểu tượng menu-->
+        <button class="navbar-toggler" type="button" data-toggler="collapse"
+                data-target="#navbarResponsiver">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsiver">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="slides" class="carousel slides" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slide" data-slide-to="0" class="active"></li>
+        <li data-target="#slide" data-slide-to="1"></li>
+        <li data-target="#slide" data-slide-to="2"></li>
+        <li data-target="#slide" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="myProfile/img/anh1.jpg" alt="...">
+            <div class="carousel-caption">
+                <h1 class="display-2">Example</h1>
+                <h3>Autolayout with boostrap</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">
+                    VIE TUTORIALS
+                </button>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="myProfile/img/anh3.jpg" alt="...">
+            <div class="carousel-caption">
+                <h1 class="display-2">Example</h1>
+                <h3>Autolayout with boostrap</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">
+                    VIE TUTORIALS
+                </button>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </div>
+        <div class="carousel-item active">
+            <img src="myProfile/img/anh4.jpg" alt="...">
+            <div class="carousel-caption">
+                <h1 class="display-2">Example</h1>
+                <h3>Autolayout with boostrap</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">
+                    VIE TUTORIALS
+                </button>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="myProfile/img/anh5.jpg" alt="...">
+            <div class="carousel-caption">
+                <h1 class="display-2">Example</h1>
+                <h3>Autolayout with boostrap</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">
+                    VIE TUTORIALS
+                </button>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <div class="col-sx-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p>This is an example of using Boostrap to make a responsive Website. This is a tutorial</p>
+        </div>
+        <div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="#">
+                <button type="button" class="btn btn-outline-secondary">Buy a host</button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Build your application</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p>Welcome my Boostrap 4 tutorial, boostrap is an open-source and free font-end library with HTML and CSS
+                based design</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-react"></i>
+            <h3>REACT</h3>
+            <p>Build the latest version of React</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-angular"></i>
+            <h3>ANGULAR</h3>
+            <p>Build your Website and Font-end Application</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>CSS3-HTML5</h3>
+            <p>Customize your Web UI with HTML5 and CSS3 </p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-12 col-lg-6">
+            <h2>If you built it...</h2>
+            <p>Arduino is an open-source hardware, software and content platform with a
+                global community. It's intended for anyone making interactive project.</p>
+            <p>Arduino Education is a dedicated team formed by education experts, content
+                developer, engineers and interaction designer from all around the world</p>
+            <br>
+        </div>
+        <div class="col-lg-6">
+            <img src="myProfile/img/anh6.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+<hr class="my-2">
+<button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun</button>
+<div class="collapse" id="emoji">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="https://i.pinimg.com/originals/f2/e6/54/f2e65478f62bcb16f4ec9b5e82f7d76d.gif" width="100" height="100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="https://upanh123.com/wp-content/uploads/2021/05/hinh-anh-dong-hoat-hinh1.gif" width="100" height="100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="https://ngocthang.net/wp-content/uploads/2020/04/source.gif" width="100" height="100">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="https://hkmobile.vn/tai-ban-ghost-win-8-1/imager_2_768_700.jpg" width="100" height="100">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Meet our team numbers</h1>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="myProfile/img/anh2.jpg">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Nguyễn Đình Ánh</h4>
+                    <p class="card-text">Siêu cấp vippro đa vụ trụ</p>
+                    <a href="#" class="btn btn-outline-secondary">Xem thông tin</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="myProfile/img/anh2.jpg">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Nguyễn Đình Ánh</h4>
+                    <p class="card-text">Siêu cấp vippro đa vụ trụ</p>
+                    <a href="#" class="btn btn-outline-secondary">Xem thông tin</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="myProfile/img/anh2.jpg">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Nguyễn Đình Ánh</h4>
+                    <p class="card-text">Siêu cấp vippro đa vụ trụ</p>
+                    <a href="#" class="btn btn-outline-secondary">Xem thông tin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-12 col-lg-6">
+            <h2>Our vision</h2>
+            <p>Arduino is an open-source hardware, software and content platform with a
+                global community. It's intended for anyone making interactive project.</p><br>
+            <p>Arduino Education is a dedicated team formed by education experts, content
+                developer, engineers and interaction designer from all around the world</p>
+            <br>
+        </div>
+        <div class="col-lg-6">
+            <img src="myProfile/img/anh5.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+<hr class="my-2">
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Contact us</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="myProfile/img/anh1.jpg" class="img-fluid">
+                <hr class="light">
+                <p>000-111-222</p>
+                <p>anhnguyen@gmail.com</p>
+                <p>Hoàng Mai- Hà Nội</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <p>Giờ làm việc</p>
+                <hr class="light">
+                <p>Sáng: 8h-12h</p>
+                <p>Chiều: 13h-17h</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <p>000-111-222</p>
+                <hr class="light">
+                <p>anhnguyen@gmail.com</p>
+                <p>Hoàng Mai- Hà Nội</p>
+            </div>
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy;DinhAnh</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

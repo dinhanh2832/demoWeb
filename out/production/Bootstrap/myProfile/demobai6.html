@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: url("https://st.quantrimang.com/photos/image/2016/09/17/anh-10.gif");
+            /*lấy toàn màn hình*/
+            background-size: cover;
+        }
+
+        .box {
+            margin-left: -10px;
+            width: 210px;
+            height: 210px;
+            margin-top: 30px;
+            /*overflow: hidden: cắt phần thừa*/
+            overflow: hidden;
+            /*border-radius: viền thành tròn*/
+            border-radius: 50%;
+            -webkit-box-shadow: 18px 15px 34px 3px rgba(117, 17, 102, 1);
+            -moz-box-shadow: 18px 15px 34px 3px rgba(117, 17, 102, 1);
+            box-shadow: 18px 15px 34px 3px rgba(117, 17, 102, 1);
+            /*transition: làm chậm theo thời gian quy định*/
+            transition: 3.5s;
+            perspective: 1000px;
+            /*animation-name: hinhAnh ;*/
+            /*animation-duration: 4s;*/
+            /*animation-iteration-count: infinite;*/
+        }
+
+        .box img {
+            width: 210px;
+            /*transform: lấy về tâm so với chính nó*/
+            transform: translateY(-40%);
+            /*margin: cách từ nó so vs bên cạnh*/
+            margin-top: 50%;
+        }
+
+        .text1 {
+            font-family: 'Estonia', cursive;
+            font-size: 40px;
+            font-weight: lighter;
+            color: antiquewhite;
+            margin-left: -50px;
+        }
+
+        /*.text {*/
+        /*    display: none;*/
+        /*}*/
+        /*!*tăng kích cỡ lên 1.1 lần*!*/
+        .box:hover {
+            /*transform: scale(1.1);*/
+            /*hiệu ứng*/
+            transform: rotate3d(90, 90, 90, 360deg);
+        }
+
+        /*@keyframes hinhAnh {*/
+        /*    0%{transform: rotate3d(60,60,60,0deg);}*/
+        /*    8%{transform: rotate3d(60,60,60,30deg);}*/
+        /*    16%{transform: rotate3d(60,60,60,60deg);}*/
+        /*    24%{transform: rotate3d(60,60,60,90deg);}*/
+        /*    32%{transform: rotate3d(60,60,60,120deg);}*/
+        /*    40%{transform: rotate3d(60,60,60,150deg);}*/
+        /*    48%{transform: rotate3d(60,60,60,180deg);}*/
+        /*    56%{transform: rotate3d(60,60,60,210deg);}*/
+        /*    64%{transform: rotate3d(60,60,60,240deg);}*/
+        /*    72%{transform: rotate3d(60,60,60,270deg);}*/
+        /*    80%{transform: rotate3d(60,60,60,300deg);}*/
+        /*    90%{transform: rotate3d(60,60,60,330deg);}*/
+        /*    100%{transform: rotate3d(60,60,60,360deg);}*/
+        /*}*/
+    </style>
+
+</head>
+<center>
+    <h1>Profile Của Ánh</h1>
+</center>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1">
+            <a class="navbar-brand" href="#">
+                <img src="img/ánhepzai.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bootstrap
+            </a>
+        </div>
+        <div class="offset-4"></div>
+        <div class="col-7">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="col"></div>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-3 text-center" >
+            <div class="box">
+                <img src="img/ánhepzai.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1 class="text1">Nguyễn Đình Ánh <br>
+                    Đẹp zai</h1>
+                <h2 class="text1">Quỳnh Phụ - Thái Bình</h2>
+            </div>
+        </div>
+        <div class="col-7">
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+</body>
+</html>
